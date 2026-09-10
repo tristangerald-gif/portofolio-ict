@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi - Tristan</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        darkbg: '#0b0f19',
+                        cardbg: '#131b2e',
+                        mlcyan: '#06b6d4',
+                        hoorange: '#f97316',
+                        pitchgreen: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(11, 15, 25, 0.82), rgba(11, 15, 25, 0.90)), url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .glow-ml {
+            box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.4);
+        }
+        .glow-basket {
+            box-shadow: 0 0 25px -5px rgba(249, 115, 22, 0.4);
+        }
+        .glow-bola {
+            box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.4);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #f97316 50%, #34d399 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-darkbg text-gray-200 font-sans antialiased selection:bg-mlcyan selection:text-black">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkbg/85 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <span class="font-display font-black text-3xl tracking-wider text-white">TRISTAN<span class="text-mlcyan">.</span></span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#about" class="hover:text-mlcyan transition-colors">Profil</a>
+                <a href="#mlbb" class="hover:text-mlcyan transition-colors">Mobile Legends</a>
+                <a href="#sports" class="hover:text-hoorange transition-colors">Basket & Bola</a>
+                <a href="#dreams" class="hover:text-purple-400 transition-colors">Impian & Cita-Cita</a>
+                <a href="#idol" class="hover:text-amber-400 transition-colors">Idola (CR7)</a>
+                <a href="#games" class="hover:text-emerald-400 transition-colors">Arena Mini Games</a>
+                <a href="#stats" class="hover:text-pitchgreen transition-colors">Statistik</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-28 flex items-center justify-center overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-darkbg to-black">
+        <div class="absolute top-1/4 left-10 w-80 h-80 bg-mlcyan/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-hoorange/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/80 border border-gray-700 text-mlcyan text-xs sm:text-sm font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-pitchgreen animate-ping"></span>
+                    Gamer & Athlete | Ready to Play
+                </div>
+                
+                <h1 class="text-5xl sm:text-7xl font-display font-black text-white tracking-tight leading-tight">
+                    HALO, SAYA <br>
+                    <span class="gradient-text uppercase">TRISTAN</span>
+                </h1>
+
+                <p class="text-gray-300 text-lg sm:text-xl font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Selamat datang di portofolio pribadi saya! Saya adalah seorang pencinta strategi digital di <span class="text-mlcyan font-semibold">Mobile Legends</span>, akurasi tembakan di lapangan <span class="text-hoorange font-semibold">Basket</span>, dan kerja sama tim di lapangan <span class="text-pitchgreen font-semibold">Sepak Bola</span>.
+                </p>
+
+                <!-- Quick Hobby Badges -->
+                <div class="grid grid-cols-3 gap-3 pt-2 max-w-md mx-auto lg:mx-0">
+                    <div class="bg-cardbg border border-mlcyan/30 p-3 rounded-xl text-center">
+                        <i class="fa-solid fa-mobile-screen-button text-mlcyan text-xl mb-1"></i>
+                        <span class="block text-xs font-bold text-white">MLBB Gamer</span>
+                    </div>
+                    <div class="bg-cardbg border border-hoorange/30 p-3 rounded-xl text-center">
+                        <i class="fa-solid fa-basketball text-hoorange text-xl mb-1"></i>
+                        <span class="block text-xs font-bold text-white">Basketballer</span>
+                    </div>
+                    <div class="bg-cardbg border border-pitchgreen/30 p-3 rounded-xl text-center">
+                        <i class="fa-solid fa-futbol text-pitchgreen text-xl mb-1"></i>
+                        <span class="block text-xs font-bold text-white">Footballer</span>
+                    </div>
+                </div>
+
+                <div class="pt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
+                    <a href="#about" class="px-8 py-3.5 rounded-xl bg-mlcyan text-black font-bold hover:bg-cyan-300 transition-all shadow-lg shadow-mlcyan/25 flex items-center gap-2">
+                        <i class="fa-solid fa-fire"></i> Jelajahi Hobi Saya
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Graphic Container -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="w-80 h-80 sm:w-96 sm:h-96 rounded-3xl bg-gradient-to-tr from-mlcyan via-hoorange to-pitchgreen p-1 shadow-2xl relative">
+                    <div class="w-full h-full rounded-[22px] bg-cardbg flex flex-col items-center justify-center text-center p-8 overflow-hidden relative group">
+                        
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShwhGCE6vTzJ7SotRi80D4LymJThxaycbhPf4qu9YqTw&s=10" alt="Foto Profil Tristan" class="w-28 h-28 rounded-full object-cover mb-4 shadow-xl border-4 border-slate-800" onerror="this.onerror=null; this.src='https://placehold.co/112x112/06b6d4/ffffff?text=Tristan';">
+                        
+                        <h3 class="text-2xl font-bold text-white mb-1">Tristan</h3>
+                        <p class="text-xs text-gray-400 mb-1">Gamer • Future Entrepreneur • Athlete</p>
+                        <p class="text-xs text-mlcyan font-semibold mb-4"><i class="fa-solid fa-cake-candles mr-1"></i> 5 April 2012 (14 Tahun)</p>
+
+                        <div class="flex gap-2 text-xs">
+                            <span class="bg-mlcyan/20 text-mlcyan border border-mlcyan/30 px-3 py-1 rounded-full font-semibold">Competitive</span>
+                            <span class="bg-hoorange/20 text-hoorange border border-hoorange/30 px-3 py-1 rounded-full font-semibold">Active</span>
+                            <span class="bg-purple-500/20 text-purple-400 border border-purple-500/30 px-3 py-1 rounded-full font-semibold">Entrepreneur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-darkbg border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-mlcyan mb-2">Tentang Tristan</h2>
+                <p class="text-3xl sm:text-4xl font-display font-extrabold text-white">Fokus di Arena Virtual & Lapangan Nyata</p>
+                <div class="inline-flex items-center gap-3 mt-4 px-5 py-2 rounded-full bg-cardbg border border-gray-800 text-sm text-gray-300">
+                    <span><i class="fa-solid fa-cake-candles text-mlcyan mr-1.5"></i> 5 April 2012</span>
+                    <span class="text-gray-600">•</span>
+                    <span><i class="fa-solid fa-user-tag text-hoorange mr-1.5"></i> 14 Tahun</span>
+                </div>
+                <div class="w-16 h-1 bg-mlcyan mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-cardbg p-8 rounded-2xl border border-gray-800 hover:border-mlcyan/50 transition-all card-glow">
+                    <div class="w-12 h-12 rounded-xl bg-mlcyan/10 text-mlcyan flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-crosshairs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Refleks & Strategi</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Terbiasa mengambil keputusan cepat di bawah tekanan saat bertanding di Mobile Legends. Penguasaan map, timing, dan komunikasi tim adalah kunci utama.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-cardbg p-8 rounded-2xl border border-gray-800 hover:border-hoorange/50 transition-all card-glow">
+                    <div class="w-12 h-12 rounded-xl bg-hoorange/10 text-hoorange flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Stamina & Kelincahan</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Di lapangan basket, kelincahan gerak, koordinasi tubuh, dan tembakan akurat menjadi kebanggaan. Selalu siap untuk serangan cepat (*fast break*).
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-cardbg p-8 rounded-2xl border border-gray-800 hover:border-pitchgreen/50 transition-all card-glow">
+                    <div class="w-12 h-12 rounded-xl bg-pitchgreen/10 text-pitchgreen flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Semangat Tim & Kecepatan</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Dalam sepak bola, semangat pantang menyerah, umpan akurat, dan berlari menyisir lapangan menjadi kombinasi yang paling menyenangkan saat bertanding.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Legends Section -->
+    <section id="mlbb" class="py-20 bg-gray-950 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mlcyan/10 border border-mlcyan/30 text-mlcyan text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-gamepad"></i> Hobi #1 - Esports & Gaming
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-display font-black text-white">MOBILE LEGENDS: BANG BANG</h2>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Bagi Tristan, Mobile Legends bukan sekadar game pengisi waktu luang, tapi arena menguji strategi, micro skill, dan kekompakan bersama squad!
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="bg-cardbg p-4 rounded-xl border border-gray-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-mlcyan/20 text-mlcyan flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Role Favorit</h4>
+                                <p class="text-gray-400 text-xs">Jungler / Gold Lane / Roamer</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-cardbg p-4 rounded-xl border border-gray-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Highest Rank</h4>
+                                <p class="text-gray-400 text-xs">Mythic Glory / Mythical Immortal Enthusiast</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-cardbg p-4 rounded-xl border border-gray-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Hero Signature</h4>
+                                <p class="text-gray-400 text-xs">Ling, Hayabusa, Brody, Chou & Tigreal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MLBB Card Display -->
+                <div class="lg:col-span-6">
+                    <div class="bg-cardbg p-8 rounded-3xl border border-mlcyan/30 glow-ml relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 text-9xl text-mlcyan font-black">ML</div>
+                        
+                        <div class="relative z-10 space-y-6">
+                            <div class="flex justify-between items-center border-b border-gray-800 pb-4">
+                                <div>
+                                    <span class="text-xs text-gray-400 uppercase tracking-widest font-bold">In-Game Nickname</span>
+                                    <h3 class="text-2xl font-black text-white">TRISTAN • PRIME</h3>
+                                </div>
+                                <span class="px-3 py-1 bg-mlcyan text-black font-bold text-xs rounded-full">ACTIVE GAMER</span>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div class="bg-gray-900/80 p-4 rounded-xl border border-gray-800">
+                                    <span class="text-xs text-gray-400 block mb-1">Win Rate Suka-suka</span>
+                                    <span class="text-2xl font-black text-mlcyan">65.8%</span>
+                                </div>
+                                <div class="bg-gray-900/80 p-4 rounded-xl border border-gray-800">
+                                    <span class="text-xs text-gray-400 block mb-1">Total Match</span>
+                                    <span class="text-2xl font-black text-white">1,500+</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-900/90 p-4 rounded-xl border border-mlcyan/20 flex justify-between items-center">
+                                <div>
+                                    <p class="text-xs text-gray-400">ID Game Tristan:</p>
+                                    <p class="font-mono text-mlcyan font-bold text-base">123456789 (2026)</p>
+                                </div>
+                                <button onclick="copySquadId()" class="px-4 py-2 bg-mlcyan text-black font-bold text-xs rounded-lg hover:bg-cyan-300 transition-all">
+                                    Salin ID
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Basketball & Football Section -->
+    <section id="sports" class="py-20 bg-darkbg border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-hoorange mb-2">Aktivitas Fisik & Olahraga</h2>
+                <p class="text-3xl sm:text-4xl font-display font-extrabold text-white">Aksi Tristan Di Lapangan</p>
+                <div class="w-16 h-1 bg-hoorange mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Basketball Card -->
+                <div class="bg-cardbg p-8 rounded-3xl border border-hoorange/30 glow-basket relative overflow-hidden flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-14 h-14 rounded-2xl bg-hoorange/20 text-hoorange flex items-center justify-center text-3xl font-bold">
+                                <i class="fa-solid fa-basketball"></i>
+                            </div>
+                            <span class="text-xs uppercase font-extrabold px-3 py-1 rounded-full bg-hoorange/10 text-hoorange border border-hoorange/30">Basket</span>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-white">Basket / Basketball</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Bagi Tristan, basket adalah perpaduan kecepatan, akurasi, dan gaya! Suka bermain posisi Point Guard / Shooting Guard yang bertugas mengatur ritme serangan dan mencetak poin dari luar garis 3-point.
+                        </p>
+
+                        <div class="space-y-2 pt-2">
+                            <div class="flex justify-between text-xs text-gray-300">
+                                <span>Akurasi Tembakan (Shooting)</span>
+                                <span class="text-hoorange font-bold">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-hoorange h-full rounded-full" style="width: 88%"></div>
+                            </div>
+
+                            <div class="flex justify-between text-xs text-gray-300 pt-2">
+                                <span>Kecepatan & Dribble</span>
+                                <span class="text-hoorange font-bold">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-hoorange h-full rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                        <span><i class="fa-solid fa-check text-hoorange mr-1"></i> Streetball & Court Game</span>
+                        <span>3x3 & 5v5</span>
+                    </div>
+                </div>
+
+                <!-- Football / Soccer Card -->
+                <div class="bg-cardbg p-8 rounded-3xl border border-pitchgreen/30 glow-bola relative overflow-hidden flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-14 h-14 rounded-2xl bg-pitchgreen/20 text-pitchgreen flex items-center justify-center text-3xl font-bold">
+                                <i class="fa-solid fa-futbol"></i>
+                            </div>
+                            <span class="text-xs uppercase font-extrabold px-3 py-1 rounded-full bg-pitchgreen/10 text-pitchgreen border border-pitchgreen/30">Sepak Bola</span>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-white">Sepak Bola & Futsal</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Sepak bola adalah wadah Tristan melatih kerja sama tim secara luas. Bermain di posisi Winger/Penyerang Sayap memanfaatkan kecepatan sprint dan operan lambung yang memanjakan teman satu tim.
+                        </p>
+
+                        <div class="space-y-2 pt-2">
+                            <div class="flex justify-between text-xs text-gray-300">
+                                <span>Sprint & Akselerasi</span>
+                                <span class="text-pitchgreen font-bold">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-pitchgreen h-full rounded-full" style="width: 95%"></div>
+                            </div>
+
+                            <div class="flex justify-between text-xs text-gray-300 pt-2">
+                                <span>Umpan & Visi Bermain</span>
+                                <span class="text-pitchgreen font-bold">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-pitchgreen h-full rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-400">
+                        <span><i class="fa-solid fa-check text-pitchgreen mr-1"></i> Lapangan Besar & Futsal</span>
+                        <span>CR7 Spirit</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Impian & Cita-Cita Section -->
+    <section id="dreams" class="py-20 bg-gray-950 border-t border-gray-800 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-bold uppercase tracking-wider mb-3">
+                    <i class="fa-solid fa-rocket"></i> Masa Depan & Target
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-display font-black text-white">IMPIAN & CITA-CITA TRISTAN</h2>
+                <p class="text-gray-300 text-base mt-3">Langkah dan target besar yang ingin diraih Tristan di masa depan, menggabungkan semangat olahraga dan dunia bisnis/wirausaha.</p>
+                <div class="w-16 h-1 bg-purple-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Impian 1: Usaha / Wirausaha -->
+                <div class="bg-cardbg p-8 rounded-3xl border border-purple-500/30 hover:border-purple-400 transition-all flex flex-col justify-between group shadow-lg">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-3xl font-bold group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <span class="text-xs uppercase font-extrabold px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/30 inline-block">Bisnis & Wirausaha</span>
+                        <h3 class="text-2xl font-bold text-white">Membangun Usaha Mandiri</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Bercita-cita menjadi seorang pebisnis/wirausahawan sukses. Tristan ingin membangun usaha seperti brand apparel olahraga, gaming arena, atau bisnis kuliner serta menciptakan lapangan pekerjaan bagi banyak orang.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-800 text-xs text-purple-300 font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-chart-line"></i> Target: CEO & Founder Usaha Sendiri
+                    </div>
+                </div>
+
+                <!-- Impian 2: Pemain Bola -->
+                <div class="bg-cardbg p-8 rounded-3xl border border-pitchgreen/30 hover:border-pitchgreen transition-all flex flex-col justify-between group shadow-lg">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-pitchgreen/20 text-pitchgreen flex items-center justify-center text-3xl font-bold group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-futbol"></i>
+                        </div>
+                        <span class="text-xs uppercase font-extrabold px-3 py-1 rounded-full bg-pitchgreen/10 text-pitchgreen border border-pitchgreen/30 inline-block">Sepak Bola Profesional</span>
+                        <h3 class="text-2xl font-bold text-white">Pemain Bola Profesional</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Terinspirasi dari etos kerja sang idola Cristiano Ronaldo, Tristan bermimpi menjadi pemain sepak bola profesional yang berlaga di kompetisi resmi liga utama dan membela Tim Nasional.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-800 text-xs text-pitchgreen font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-trophy"></i> Target: Striker / Winger Tim Utama
+                    </div>
+                </div>
+
+                <!-- Impian 3: Pemain Basket -->
+                <div class="bg-cardbg p-8 rounded-3xl border border-hoorange/30 hover:border-hoorange transition-all flex flex-col justify-between group shadow-lg">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-hoorange/20 text-hoorange flex items-center justify-center text-3xl font-bold group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-basketball"></i>
+                        </div>
+                        <span class="text-xs uppercase font-extrabold px-3 py-1 rounded-full bg-hoorange/10 text-hoorange border border-hoorange/30 inline-block">Atlet Basket Pro</span>
+                        <h3 class="text-2xl font-bold text-white">Pemain Basket Profesional</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Bermimpi menembus liga basket profesional sebagai Point Guard / Shooting Guard yang handal. Mengandalkan akurasi tembakan 3 angka dan kelincahan untuk mencetak poin kemenangan.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-800 text-xs text-hoorange font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-medal"></i> Target: Pro Basketball Player & Champion
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Idol Section: Cristiano Ronaldo -->
+    <section id="idol" class="py-20 bg-gradient-to-b from-darkbg via-slate-900 to-darkbg border-t border-gray-800 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
+                    <i class="fa-solid fa-crown"></i> Football Idol & Inspiration
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-display font-black text-white">CRISTIANO RONALDO <span class="text-amber-400">(CR7)</span></h2>
+                <p class="text-gray-300 text-base mt-3">Pemain bola favorit dan sumber inspirasi utama Tristan dalam membentuk disiplin, mentalitas juara, dan etos kerja di lapangan.</p>
+                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-cardbg/80 border border-amber-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-sm">
+                <!-- Left Column: Image Photo -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl bg-gradient-to-tr from-amber-500 via-red-600 to-indigo-600 p-1 shadow-2xl overflow-hidden group">
+                        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQB7gKtJrakyKux71Gp9e_sWOOEtuAemsTYW-6NFzw4-zM2yJHs4RCliQEit4nodMyZeQxRMlAF7Iob2DG5grvMWyrgZstr_v09OZJ8V8qCX0jUieQruCxmq1ZHCRiH5m0DMeJ8SHmqbsLb&s=19" alt="Cristiano Ronaldo" class="w-full h-full object-cover rounded-[14px] group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=800&auto=format&fit=crop';">
+                        <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black via-black/60 to-transparent text-center">
+                            <h3 class="text-xl font-black text-white">CRISTIANO RONALDO</h3>
+                            <p class="text-xs text-amber-400 font-bold tracking-widest uppercase">The GOAT Inspiration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Why Tristan Admires CR7 -->
+                <div class="lg:col-span-7 space-y-5">
+                    <h3 class="text-2xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-fire text-amber-400"></i> Mengapa Tristan Mengidolakan Ronaldo?
+                    </h3>
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                        Bagi Tristan, Cristiano Ronaldo bukan sekadar pencetak gol luar biasa, melainkan bukti nyata bahwa <strong class="text-white">kerja keras dan disiplin ekstrem dapat mengalahkan bakat alami semata</strong>. Setiap kali mengolah bola di lapangan, Tristan terinspirasi oleh semangat pantang menyerah CR7.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-darkbg/80 p-4 rounded-xl border border-gray-800 flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl shrink-0 mt-0.5">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Disiplin & Etos Kerja</h4>
+                                <p class="text-gray-400 text-xs mt-0.5">Latihan ekstra keras untuk menjaga fisik prima di setiap pertandingan.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-darkbg/80 p-4 rounded-xl border border-gray-800 flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-red-500/20 text-red-400 flex items-center justify-center text-xl shrink-0 mt-0.5">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Mentalitas Juara</h4>
+                                <p class="text-gray-400 text-xs mt-0.5">Pantang menyerah dan selalu tampil percaya diri di situasi krusial.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-darkbg/80 p-4 rounded-xl border border-gray-800 flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-pitchgreen/20 text-pitchgreen flex items-center justify-center text-xl shrink-0 mt-0.5">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Kecepatan & Finishing</h4>
+                                <p class="text-gray-400 text-xs mt-0.5">Gaya menyerang cepat dan penyelesaian akhir yang mematikan.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-darkbg/80 p-4 rounded-xl border border-gray-800 flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-mlcyan/20 text-mlcyan flex items-center justify-center text-xl shrink-0 mt-0.5">
+                                <i class="fa-solid fa-hands-clapping"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Celebration & Spirit</h4>
+                                <p class="text-gray-400 text-xs mt-0.5">Selebrasi "Siuuu!" yang membakar semangat tim saat mencetak gol.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Games Section -->
+    <section id="games" class="py-20 bg-slate-950 border-t border-gray-800 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">
+                    <i class="fa-solid fa-gamepad"></i> Tristan Game Zone
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-display font-black text-white">ARENA MINI GAMES</h2>
+                <p class="text-gray-300 text-base mt-3">Uji ketepatan tendangan sepak bola dan tingkat fokus refleks kamu langsung di sini!</p>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Game Tabs Switcher -->
+            <div class="flex justify-center gap-3 mb-8">
+                <button id="tab-btn-football" onclick="switchGameTab('football')" class="px-6 py-3 rounded-xl font-bold text-sm transition-all flex items-center gap-2 bg-emerald-500 text-black shadow-lg shadow-emerald-500/20">
+                    <i class="fa-solid fa-futbol"></i> Penalty Striker (Bola)
+                </button>
+                <button id="tab-btn-focus" onclick="switchGameTab('focus')" class="px-6 py-3 rounded-xl font-bold text-sm transition-all flex items-center gap-2 bg-cardbg text-gray-400 hover:text-white border border-gray-800">
+                    <i class="fa-solid fa-bolt"></i> Focus & Reflex Trainer
+                </button>
+            </div>
+
+            <!-- Game 1: Penalty Shootout (Football) -->
+            <div id="game-container-football" class="bg-cardbg border border-emerald-500/30 rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto shadow-2xl">
+                <div class="flex flex-col sm:flex-row justify-between items-center pb-4 mb-4 border-b border-gray-800 gap-4">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
+                            <i class="fa-solid fa-futbol text-emerald-400"></i> Penalty Shootout Challenge
+                        </h3>
+                        <p class="text-xs text-gray-400">Klik / tap pada area gawang untuk menendang bola ke arah target!</p>
+                    </div>
+                    <div class="flex gap-4 text-center">
+                        <div class="bg-darkbg px-4 py-2 rounded-xl border border-gray-800">
+                            <span class="text-xs text-gray-400 block">Sisa Bola</span>
+                            <span id="fb-balls-left" class="text-xl font-black text-emerald-400">5</span>
+                        </div>
+                        <div class="bg-darkbg px-4 py-2 rounded-xl border border-gray-800">
+                            <span class="text-xs text-gray-400 block">Gol</span>
+                            <span id="fb-score" class="text-xl font-black text-white">0</span>
+                        </div>
+                        <div class="bg-darkbg px-4 py-2 rounded-xl border border-gray-800">
+                            <span class="text-xs text-gray-400 block">Poin</span>
+                            <span id="fb-points" class="text-xl font-black text-amber-400">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Football Canvas -->
+                <div class="relative w-full aspect-[16/9] max-h-[400px] bg-slate-900 rounded-2xl overflow-hidden border border-gray-800 flex items-center justify-center cursor-crosshair">
+                    <canvas id="footballCanvas" class="w-full h-full block"></canvas>
+                    <div id="fb-overlay" class="absolute inset-0 bg-darkbg/90 backdrop-blur-sm flex flex-col items-center justify-center text-center p-6 space-y-4">
+                        <i class="fa-solid fa-trophy text-5xl text-amber-400 animate-bounce"></i>
+                        <h4 id="fb-overlay-title" class="text-2xl sm:text-3xl font-black text-white">Tandai Tendangan Penaltimu!</h4>
+                        <p id="fb-overlay-desc" class="text-gray-300 text-sm max-w-md">Kalahkan Kiper dan tembak target bonus di pojok gawang untuk meraih poin tertinggi ala CR7!</p>
+                        <button onclick="startFootballGame()" class="px-8 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold rounded-xl text-sm transition-all shadow-lg shadow-emerald-500/30 flex items-center gap-2">
+                            <i class="fa-solid fa-play"></i> Mulai Tendangan
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex justify-between items-center text-xs text-gray-400">
+                    <span><i class="fa-solid fa-circle-info text-emerald-400 mr-1"></i> Target pojok gawang memberi +50 Poin Ekstra!</span>
+                    <button onclick="resetFootballGame()" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-right mr-1"></i> Reset Game</button>
+                </div>
+            </div>
+
+            <!-- Game 2: Focus & Reflex Trainer -->
+            <div id="game-container-focus" class="hidden bg-cardbg border border-mlcyan/30 rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto shadow-2xl">
+                <div class="flex flex-col sm:flex-row justify-between items-center pb-4 mb-4 border-b border-gray-800 gap-4">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-mlcyan"></i> Focus & Reflex Trainer
+                        </h3>
+                        <p class="text-xs text-gray-400">Tekan target yang muncul secepat mungkin sebelum menghilang!</p>
+                    </div>
+                    <div class="flex gap-3 text-center">
+                        <div class="bg-darkbg px-4 py-2 rounded-xl border border-gray-800">
+                            <span class="text-xs text-gray-400 block">Waktu</span>
+                            <span id="fc-timer" class="text-xl font-black text-mlcyan">30s</span>
+                        </div>
+                        <div class="bg-darkbg px-4 py-2 rounded-xl border border-gray-800">
+                            <span class="text-xs text-gray-400 block">Skor Hits</span>
+                            <span id="fc-score" class="text-xl font-black text-white">0</span>
+                        </div>
+                        <div class="bg-darkbg px-4 py-2 rounded-xl border border-gray-800">
+                            <span class="text-xs text-gray-400 block">Akurasi</span>
+                            <span id="fc-accuracy" class="text-xl font-black text-hoorange">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Focus Grid Arena -->
+                <div class="relative w-full aspect-[16/9] max-h-[400px] bg-slate-900 rounded-2xl overflow-hidden border border-gray-800 p-4">
+                    <div id="focus-grid" class="w-full h-full grid grid-cols-3 sm:grid-cols-4 gap-3 relative">
+                        <!-- Targets injected via JS -->
+                    </div>
+
+                    <div id="fc-overlay" class="absolute inset-0 bg-darkbg/90 backdrop-blur-sm flex flex-col items-center justify-center text-center p-6 space-y-4">
+                        <i class="fa-solid fa-crosshairs text-5xl text-mlcyan animate-pulse"></i>
+                        <h4 id="fc-overlay-title" class="text-2xl sm:text-3xl font-black text-white">Tes Kecepatan Fokus Tristan</h4>
+                        <p id="fc-overlay-desc" class="text-gray-300 text-sm max-w-md">Latih refleks ala Pro-Gamer & Atlet! Klik item bola/shield yang muncul secepat mungkin dalam 30 detik.</p>
+                        <button onclick="startFocusGame()" class="px-8 py-3.5 bg-mlcyan hover:bg-cyan-300 text-black font-extrabold rounded-xl text-sm transition-all shadow-lg shadow-mlcyan/30 flex items-center gap-2">
+                            <i class="fa-solid fa-play"></i> Mulai Uji Fokus
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex justify-between items-center text-xs text-gray-400">
+                    <span><i class="fa-solid fa-bullseye text-mlcyan mr-1"></i> Jangan klik area kosong untuk menjaga persentase Akurasi!</span>
+                    <button onclick="resetFocusGame()" class="hover:text-white transition-colors"><i class="fa-solid fa-rotate-right mr-1"></i> Reset Game</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Overall Stats Section -->
+    <section id="stats" class="py-20 bg-gray-950 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-mlcyan mb-2">Statistik Karakter</h2>
+                <p class="text-3xl sm:text-4xl font-display font-extrabold text-white">Atribut Tristan</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+                <div class="bg-cardbg p-6 rounded-2xl border border-gray-800">
+                    <i class="fa-solid fa-gamepad text-3xl text-mlcyan mb-3"></i>
+                    <span class="block text-3xl font-black text-white">99</span>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Gaming Focus</span>
+                </div>
+
+                <div class="bg-cardbg p-6 rounded-2xl border border-gray-800">
+                    <i class="fa-solid fa-basketball text-3xl text-hoorange mb-3"></i>
+                    <span class="block text-3xl font-black text-white">90</span>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Basket Skill</span>
+                </div>
+
+                <div class="bg-cardbg p-6 rounded-2xl border border-gray-800">
+                    <i class="fa-solid fa-futbol text-3xl text-pitchgreen mb-3"></i>
+                    <span class="block text-3xl font-black text-white">92</span>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Speed & Stamina</span>
+                </div>
+
+                <div class="bg-cardbg p-6 rounded-2xl border border-gray-800">
+                    <i class="fa-solid fa-heart text-3xl text-red-500 mb-3"></i>
+                    <span class="block text-3xl font-black text-white">100%</span>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Fair Play & Fun</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification Element -->
+    <div id="toast" class="fixed bottom-8 right-8 bg-mlcyan text-black font-bold px-6 py-3 rounded-2xl shadow-2xl transition-all duration-300 opacity-0 translate-y-10 pointer-events-none flex items-center gap-3 z-50">
+        <i class="fa-solid fa-circle-check text-xl"></i>
+        <span id="toast-message">Pesan Toast</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black/80 border-t border-gray-900 text-center text-gray-500 text-xs backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <div class="font-display font-black text-xl text-white">TRISTAN<span class="text-mlcyan">.</span></div>
+            <p>Portofolio Pribadi Tristan — Mobile Legends, Basket & Sepak Bola.</p>
+            <p class="text-gray-600">&copy; 2026 Tristan Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.innerText = message;
+            
+            toast.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+            }, 3000);
+        }
+
+        function copySquadId() {
+            const textToCopy = "123456789 (2026)";
+            
+            const tempInput = document.createElement("input");
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            showToast("ID Mobile Legends Tristan berhasil disalin! (123456789)");
+        }
+
+        // Tab Switcher Logic
+        function switchGameTab(tabName) {
+            const footballContainer = document.getElementById('game-container-football');
+            const focusContainer = document.getElementById('game-container-focus');
+            const btnFootball = document.getElementById('tab-btn-football');
+            const btnFocus = document.getElementById('tab-btn-focus');
+
+            if (tabName === 'football') {
+                footballContainer.classList.remove('hidden');
+                focusContainer.classList.add('hidden');
+                btnFootball.className = "px-6 py-3 rounded-xl font-bold text-sm transition-all flex items-center gap-2 bg-emerald-500 text-black shadow-lg shadow-emerald-500/20";
+                btnFocus.className = "px-6 py-3 rounded-xl font-bold text-sm transition-all flex items-center gap-2 bg-cardbg text-gray-400 hover:text-white border border-gray-800";
+            } else {
+                focusContainer.classList.remove('hidden');
+                footballContainer.classList.add('hidden');
+                btnFocus.className = "px-6 py-3 rounded-xl font-bold text-sm transition-all flex items-center gap-2 bg-mlcyan text-black shadow-lg shadow-mlcyan/20";
+                btnFootball.className = "px-6 py-3 rounded-xl font-bold text-sm transition-all flex items-center gap-2 bg-cardbg text-gray-400 hover:text-white border border-gray-800";
+                initFocusGrid();
+            }
+        }
+
+        // Audio Effects Synthesizer (No external files)
+        function playSoundEffect(type) {
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+
+                if (type === 'kick') {
+                    osc.type = 'triangle';
+                    osc.frequency.setValueAtTime(120, ctx.currentTime);
+                    osc.frequency.exponentialRampToValueAtTime(30, ctx.currentTime + 0.15);
+                    gain.gain.setValueAtTime(0.5, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.15);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.15);
+                } else if (type === 'goal') {
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(440, ctx.currentTime);
+                    osc.frequency.setValueAtTime(880, ctx.currentTime + 0.1);
+                    gain.gain.setValueAtTime(0.3, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.4);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.4);
+                } else if (type === 'hit') {
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(600, ctx.currentTime);
+                    gain.gain.setValueAtTime(0.2, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.08);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.08);
+                }
+            } catch (e) {
+                // Audio not supported or blocked by browser policy
+            }
+        }
+
+        // ==========================================
+        // GAME 1: FOOTBALL PENALTY SHOOTOUT
+        // ==========================================
+        const fbCanvas = document.getElementById('footballCanvas');
+        const fbCtx = fbCanvas.getContext('2d');
+        
+        let fbState = {
+            active: false,
+            ballsLeft: 5,
+            goals: 0,
+            points: 0,
+            keeperX: 0,
+            keeperDir: 1,
+            keeperSpeed: 3,
+            ball: null,
+            targets: []
+        };
+
+        function resizeFbCanvas() {
+            if (!fbCanvas) return;
+            const rect = fbCanvas.parentElement.getBoundingClientRect();
+            fbCanvas.width = rect.width;
+            fbCanvas.height = rect.height;
+            drawFootballScene();
+        }
+
+        window.addEventListener('resize', resizeFbCanvas);
+
+        function initFootballTargets() {
+            const w = fbCanvas.width;
+            const h = fbCanvas.height;
+            fbState.targets = [
+                { x: w * 0.22, y: h * 0.22, radius: 22, pts: 50, label: '50' }, // Top-Left
+                { x: w * 0.78, y: h * 0.22, radius: 22, pts: 50, label: '50' }, // Top-Right
+                { x: w * 0.50, y: h * 0.25, radius: 20, pts: 30, label: '30' }  // Center Top
+            ];
+        }
+
+        function startFootballGame() {
+            resizeFbCanvas();
+            initFootballTargets();
+            fbState.ballsLeft = 5;
+            fbState.goals = 0;
+            fbState.points = 0;
+            fbState.active = true;
+            fbState.keeperX = fbCanvas.width / 2;
+            fbState.ball = null;
+
+            document.getElementById('fb-overlay').classList.add('hidden');
+            updateFbUI();
+            requestAnimationFrame(footballGameLoop);
+        }
+
+        function resetFootballGame() {
+            fbState.active = false;
+            document.getElementById('fb-overlay-title').innerText = "Tandai Tendangan Penaltimu!";
+            document.getElementById('fb-overlay-desc').innerText = "Kalahkan Kiper dan tembak target bonus di pojok gawang untuk meraih poin tertinggi ala CR7!";
+            document.getElementById('fb-overlay').classList.remove('hidden');
+        }
+
+        function updateFbUI() {
+            document.getElementById('fb-balls-left').innerText = fbState.ballsLeft;
+            document.getElementById('fb-score').innerText = fbState.goals;
+            document.getElementById('fb-points').innerText = fbState.points;
+        }
+
+        function footballGameLoop() {
+            if (!fbState.active) return;
+
+            // Move Goalkeeper
+            const goalLeft = fbCanvas.width * 0.15;
+            const goalRight = fbCanvas.width * 0.85;
+            fbState.keeperX += fbState.keeperSpeed * fbState.keeperDir;
+
+            if (fbState.keeperX > goalRight - 30 || fbState.keeperX < goalLeft + 30) {
+                fbState.keeperDir *= -1;
+            }
+
+            // Move Ball if shot
+            if (fbState.ball && fbState.ball.active) {
+                fbState.ball.x += (fbState.ball.targetX - fbState.ball.startX) * 0.08;
+                fbState.ball.y += (fbState.ball.targetY - fbState.ball.startY) * 0.08;
+                fbState.ball.size *= 0.96; // Perspective shrinking
+
+                // Check arrival at goal line
+                if (Math.abs(fbState.ball.y - fbState.ball.targetY) < 5) {
+                    processShotResult(fbState.ball.targetX, fbState.ball.targetY);
+                    fbState.ball = null;
+                }
+            }
+
+            drawFootballScene();
+
+            if (fbState.active) {
+                requestAnimationFrame(footballGameLoop);
+            }
+        }
+
+        function drawFootballScene() {
+            const w = fbCanvas.width;
+            const h = fbCanvas.height;
+
+            // Pitch & Stadium Background
+            fbCtx.fillStyle = '#064e3b';
+            fbCtx.fillRect(0, 0, w, h);
+
+            // Grass Stripes
+            fbCtx.fillStyle = '#047857';
+            for (let i = 0; i < h; i += 30) {
+                if ((i / 30) % 2 === 0) fbCtx.fillRect(0, i, w, 15);
+            }
+
+            // Goal Net Structure
+            const goalX = w * 0.15;
+            const goalY = h * 0.12;
+            const goalW = w * 0.70;
+            const goalH = h * 0.48;
+
+            // Net Mesh Background
+            fbCtx.fillStyle = 'rgba(255, 255, 255, 0.12)';
+            fbCtx.fillRect(goalX, goalY, goalW, goalH);
+
+            // Goal Posts Framework
+            fbCtx.strokeStyle = '#ffffff';
+            fbCtx.lineWidth = 6;
+            fbCtx.strokeRect(goalX, goalY, goalW, goalH);
+
+            // Draw Bonus Targets inside Net
+            fbState.targets.forEach(t => {
+                fbCtx.beginPath();
+                fbCtx.arc(t.x, t.y, t.radius, 0, Math.PI * 2);
+                fbCtx.fillStyle = 'rgba(245, 158, 11, 0.3)';
+                fbCtx.fill();
+                fbCtx.lineWidth = 2;
+                fbCtx.strokeStyle = '#f59e0b';
+                fbCtx.stroke();
+
+                fbCtx.fillStyle = '#f59e0b';
+                fbCtx.font = 'bold 12px Plus Jakarta Sans';
+                fbCtx.textAlign = 'center';
+                fbCtx.textBaseline = 'middle';
+                fbCtx.fillText('+' + t.label, t.x, t.y);
+            });
+
+            // Draw Goalkeeper
+            const gkY = goalY + goalH - 10;
+            fbCtx.fillStyle = '#f97316'; // Keeper Orange Jersey
+            fbCtx.beginPath();
+            fbCtx.arc(fbState.keeperX, gkY - 25, 12, 0, Math.PI * 2); // Head
+            fbCtx.fill();
+
+            fbCtx.fillRect(fbState.keeperX - 16, gkY - 13, 32, 22); // Body & Arms
+            fbCtx.fillStyle = '#0f172a';
+            fbCtx.fillRect(fbState.keeperX - 12, gkY + 9, 10, 14); // Left leg
+            fbCtx.fillRect(fbState.keeperX + 2, gkY + 9, 10, 14);  // Right leg
+
+            // Penalty Spot
+            fbCtx.fillStyle = '#ffffff';
+            fbCtx.beginPath();
+            fbCtx.arc(w / 2, h * 0.85, 4, 0, Math.PI * 2);
+            fbCtx.fill();
+
+            // Ball at Penalty Spot (or Moving Ball)
+            if (fbState.ball && fbState.ball.active) {
+                drawBall(fbState.ball.x, fbState.ball.y, fbState.ball.size);
+            } else if (fbState.ballsLeft > 0) {
+                drawBall(w / 2, h * 0.85, 18);
+            }
+        }
+
+        function drawBall(x, y, radius) {
+            fbCtx.beginPath();
+            fbCtx.arc(x, y, radius, 0, Math.PI * 2);
+            fbCtx.fillStyle = '#ffffff';
+            fbCtx.fill();
+            fbCtx.strokeStyle = '#000000';
+            fbCtx.lineWidth = 2;
+            fbCtx.stroke();
+
+            // Ball Pattern detail
+            fbCtx.fillStyle = '#0f172a';
+            fbCtx.beginPath();
+            fbCtx.arc(x, y, radius * 0.35, 0, Math.PI * 2);
+            fbCtx.fill();
+        }
+
+        fbCanvas.addEventListener('click', function (e) {
+            if (!fbState.active || fbState.ball || fbState.ballsLeft <= 0) return;
+
+            const rect = fbCanvas.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const clickY = e.clientY - rect.top;
+
+            playSoundEffect('kick');
+
+            fbState.ball = {
+                startX: fbCanvas.width / 2,
+                startY: fbCanvas.height * 0.85,
+                x: fbCanvas.width / 2,
+                y: fbCanvas.height * 0.85,
+                targetX: clickX,
+                targetY: clickY,
+                size: 18,
+                active: true
+            };
+
+            fbState.ballsLeft--;
+            updateFbUI();
+        });
+
+        function processShotResult(tx, ty) {
+            const goalX = fbCanvas.width * 0.15;
+            const goalY = fbCanvas.height * 0.12;
+            const goalW = fbCanvas.width * 0.70;
+            const goalH = fbCanvas.height * 0.48;
+
+            const isInsideGoal = (tx >= goalX && tx <= goalX + goalW && ty >= goalY && ty <= goalY + goalH);
+            const savedByKeeper = Math.abs(tx - fbState.keeperX) < 32 && Math.abs(ty - (goalY + goalH - 15)) < 35;
+
+            if (isInsideGoal && !savedByKeeper) {
+                playSoundEffect('goal');
+                fbState.goals++;
+                let earnedPts = 100;
+
+                // Check Target bonus
+                fbState.targets.forEach(t => {
+                    const dist = Math.hypot(tx - t.x, ty - t.y);
+                    if (dist < t.radius + 10) {
+                        earnedPts += t.pts;
+                    }
+                });
+
+                fbState.points += earnedPts;
+                showToast("GOL SUPERB! +" + earnedPts + " Poin! ⚽");
+            } else if (savedByKeeper) {
+                showToast("DITEPIS KIPER! Coba bidik sudut lain! 🧤");
+            } else {
+                showToast("TENDANGAN MELESET DI LUAR GAWANG! ❌");
+            }
+
+            updateFbUI();
+
+            // Check Game Over
+            if (fbState.ballsLeft <= 0) {
+                setTimeout(() => {
+                    fbState.active = false;
+                    document.getElementById('fb-overlay-title').innerText = "PENALTY SHOOTOUT SELESAI!";
+                    document.getElementById('fb-overlay-desc').innerText = `Hasil Skor Tristan: ${fbState.goals} Gol dari 5 Tendangan (${fbState.points} Poin)!`;
+                    document.getElementById('fb-overlay').classList.remove('hidden');
+                }, 800);
+            }
+        }
+
+
+        // ==========================================
+        // GAME 2: TRISTAN FOCUS & REFLEX TRAINER
+        // ==========================================
+        let fcState = {
+            active: false,
+            score: 0,
+            totalClicks: 0,
+            timeLeft: 30,
+            timerInterval: null,
+            targetTimeout: null,
+            currentTargetIdx: null
+        };
+
+        const targetIcons = [
+            { icon: 'fa-futbol', color: 'text-pitchgreen' },
+            { icon: 'fa-basketball', color: 'text-hoorange' },
+            { icon: 'fa-shield-halved', color: 'text-mlcyan' },
+            { icon: 'fa-crosshairs', color: 'text-amber-400' }
+        ];
+
+        function initFocusGrid() {
+            const grid = document.getElementById('focus-grid');
+            grid.innerHTML = '';
+            
+            for (let i = 0; i < 12; i++) {
+                const cell = document.createElement('div');
+                cell.className = "bg-darkbg/80 border border-gray-800 rounded-2xl flex items-center justify-center cursor-pointer transition-all hover:border-gray-600 relative overflow-hidden group";
+                cell.dataset.index = i;
+                cell.onclick = () => handleFocusCellClick(i);
+                grid.appendChild(cell);
+            }
+        }
+
+        function startFocusGame() {
+            initFocusGrid();
+            fcState.score = 0;
+            fcState.totalClicks = 0;
+            fcState.timeLeft = 30;
+            fcState.active = true;
+
+            document.getElementById('fc-overlay').classList.add('hidden');
+            updateFcUI();
+
+            fcState.timerInterval = setInterval(() => {
+                fcState.timeLeft--;
+                updateFcUI();
+
+                if (fcState.timeLeft <= 0) {
+                    endFocusGame();
+                }
+            }, 1000);
+
+            spawnNextFocusTarget();
+        }
+
+        function resetFocusGame() {
+            clearInterval(fcState.timerInterval);
+            clearTimeout(fcState.targetTimeout);
+            fcState.active = false;
+
+            document.getElementById('fc-overlay-title').innerText = "Tes Kecepatan Fokus Tristan";
+            document.getElementById('fc-overlay-desc').innerText = "Latih refleks ala Pro-Gamer & Atlet! Klik item bola/shield yang muncul secepat mungkin dalam 30 detik.";
+            document.getElementById('fc-overlay').classList.remove('hidden');
+            initFocusGrid();
+        }
+
+        function updateFcUI() {
+            document.getElementById('fc-timer').innerText = fcState.timeLeft + 's';
+            document.getElementById('fc-score').innerText = fcState.score;
+
+            const accuracy = fcState.totalClicks > 0 
+                ? Math.round((fcState.score / fcState.totalClicks) * 100) 
+                : 100;
+            document.getElementById('fc-accuracy').innerText = accuracy + '%';
+        }
+
+        function spawnNextFocusTarget() {
+            if (!fcState.active) return;
+
+            const cells = document.querySelectorAll('#focus-grid > div');
+            cells.forEach(c => c.innerHTML = '');
+
+            const randomIdx = Math.floor(Math.random() * cells.length);
+            fcState.currentTargetIdx = randomIdx;
+
+            const randItem = targetIcons[Math.floor(Math.random() * targetIcons.length)];
+            const targetEl = document.createElement('div');
+            targetEl.className = `w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-slate-800 border border-mlcyan flex items-center justify-center text-2xl sm:text-3xl ${randItem.color} shadow-lg shadow-mlcyan/20 animate-pulse`;
+            targetEl.innerHTML = `<i class="fa-solid ${randItem.icon}"></i>`;
+
+            cells[randomIdx].appendChild(targetEl);
+
+            // Timeout to clear target if missed
+            const speedDelay = Math.max(600, 1200 - (fcState.score * 20)); // Gets faster as score increases
+            fcState.targetTimeout = setTimeout(() => {
+                if (fcState.active && fcState.currentTargetIdx === randomIdx) {
+                    cells[randomIdx].innerHTML = '';
+                    spawnNextFocusTarget();
+                }
+            }, speedDelay);
+        }
+
+        function handleFocusCellClick(clickedIdx) {
+            if (!fcState.active) return;
+
+            fcState.totalClicks++;
+
+            if (clickedIdx === fcState.currentTargetIdx) {
+                playSoundEffect('hit');
+                fcState.score++;
+                clearTimeout(fcState.targetTimeout);
+                spawnNextFocusTarget();
+            } else {
+                updateFcUI();
+            }
+        }
+
+        function endFocusGame() {
+            clearInterval(fcState.timerInterval);
+            clearTimeout(fcState.targetTimeout);
+            fcState.active = false;
+
+            const accuracy = fcState.totalClicks > 0 
+                ? Math.round((fcState.score / fcState.totalClicks) * 100) 
+                : 0;
+
+            let rank = "Mythic Focus Gamer";
+            if (fcState.score < 15) rank = "Amatir Refleks";
+            else if (fcState.score < 25) rank = "Pro Player Focus";
+
+            document.getElementById('fc-overlay-title').innerText = "TES FOKUS SELESAI!";
+            document.getElementById('fc-overlay-desc').innerText = `Skor Hits: ${fcState.score} | Akurasi: ${accuracy}% | Peringkat Refleks: "${rank}"`;
+            document.getElementById('fc-overlay').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
